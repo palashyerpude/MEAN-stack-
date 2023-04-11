@@ -19,7 +19,10 @@ export class LoginComponent implements OnInit {
 // loginForm:any={email:"",username:"",password:""}
 // arr:Array<Verification>=[]
 
-  constructor(private formBuilder: FormBuilder, private http: HttpClient) { }
+  constructor(private formBuilder: FormBuilder, private http: HttpClient) {
+   this.loginForm={};
+    this.loginError='';
+  }
 
   ngOnInit() {
     
